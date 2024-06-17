@@ -1,28 +1,23 @@
+/* Set font and alignment for the entire body */
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin: 0;
     padding: 0;
 }
-.container {
-    width: 100%;
-    min-height: 100vh;
-    padding: 10px;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #08a72d);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-}
-    
+/* Style for horizontal rule */
 hr {
     width: 500px;
 }
 
+/* Style for the title */
 #title {
     font-size: 36px;
     font-weight: bold;
     letter-spacing: 2px;
 }
 
+/* Style for the game board */
 #board {
     width: 350px;
     height: 420px;
@@ -32,6 +27,7 @@ hr {
     flex-wrap: wrap;
 }
 
+/* Style for each tile on the board */
 .tile {
     border: 2px solid lightgray;
     width: 60px;
@@ -45,32 +41,36 @@ hr {
     align-items: center;
 }
 
+/* Style for tiles with correct letters in the correct position */
 .correct {
     background-color: #6AAA64;
     color: white;
     border-color: white;
 }
 
+/* Style for tiles with correct letters in the wrong position */
 .present {
     background-color: #C9B458;
     color: white;
     border-color: white;
 }
 
+/* Style for tiles with incorrect letters */
 .absent {
     background-color: #787C7E;
     color: white;
-    border-color:white;
+    border-color: white;
 }
 
+/* Style for each row of the keyboard */
 .keyboard-row {
     width: 400px;
-
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
 
+/* Style for each key on the keyboard */
 .key-tile {
     width: 36px;
     height: 40px;
@@ -83,6 +83,7 @@ hr {
     align-items: center;
 }
 
+/* Style for the enter key on the keyboard */
 .enter-key-tile {
     width: 76px;
     height: 40px;
